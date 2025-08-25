@@ -1,0 +1,43 @@
+{
+  "name": "casljs",
+  "version": "1.0.0",
+  "description": "CASLJS Nx monorepo with CQRS example",
+  "scripts": {
+    "start": "nx serve api",
+    "build": "nx build api",
+    "test": "nx run-many --target=test --all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@nestjs/schematics": "^11.0.0",
+    "@nestjs/testing": "^11.0.0",
+    "@nx/js": "21.4.1",
+    "@nx/nest": "^21.4.1",
+    "@nx/node": "21.4.1",
+    "@nx/web": "21.4.1",
+    "@nx/webpack": "21.4.1",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
+    "@types/node": "^24.3.0",
+    "nx": "^21.4.1",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.3.0",
+    "typescript": "^5.9.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@casl/ability": "^6.7.3",
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/cqrs": "^11.0.3",
+    "@nestjs/platform-express": "^11.0.0",
+    "axios": "^1.6.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  }
+}

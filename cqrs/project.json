@@ -1,0 +1,20 @@
+{
+  "name": "cqrs",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "cqrs/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/cqrs",
+        "tsConfig": "cqrs/tsconfig.lib.json",
+        "packageJson": "cqrs/package.json",
+        "main": "cqrs/src/index.ts",
+        "assets": ["cqrs/*.md"]
+      }
+    }
+  }
+}
